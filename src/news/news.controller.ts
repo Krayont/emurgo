@@ -48,7 +48,6 @@ export class NewsController {
   @HttpCode(200) 
   find(@Body() request: FindInputDto): Promise<FindOutputDto> {
     //
-    console.log(request);
     return this.newsService.getNews(request);
   }
 
